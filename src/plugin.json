@@ -1,13 +1,13 @@
 {
   "type": "panel",
-  "name": "Orchestra Cities Map",
-  "id": "orchestracities-map-panel",
+  "name": "Bobcodes Cities Map",
+  "id": "bobcodes-map-panel",
   "state": "beta",
   "info": {
-    "description": "Orchestra Cities Map",
+    "description": "Bobcodes Cities Map",
     "author": {
-      "name": "Orchestra Cities",
-      "url": "https://github.com/orchestracities"
+      "name": "Bobcodes Cities Map",
+      "url": "https://github.com/b0bcarlson"
     },
     "keywords": [
       "map",
@@ -20,12 +20,8 @@
     },
     "links": [
       {
-        "name": "Website",
-        "url": "https://github.com/orchestracities/grafana-map-plugin/"
-      },
-      {
         "name": "License",
-        "url": "https://github.com/orchestracities/grafana-map-plugin/blob/master/LICENSE"
+        "url": "https://github.com/b0bcodes/map-plugin/blob/master/LICENSE"
       }
     ],
     "screenshots": [

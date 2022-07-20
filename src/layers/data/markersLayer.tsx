@@ -378,15 +378,24 @@ export const markersLayer: ExtendMapLayerRegistryItem<MarkersConfig> = {
                 if (geoType === GeometryType.POINT) {
                   geometry.setStyle(shape!.make(color, fillColor, radius));
                 } else {
-                  let style = new Style({
-                    stroke: new Stroke({
-                      color: color,
-                      width: 5,
-                    }),
-                    fill: new Fill({
-                      color: fillColor,
-                    }),
-                  });
+                  let style;
+                  if (radius > 0) {
+                    style = new Style({
+                      stroke: new Stroke({
+                        color: color,
+                        width: radius,
+                      }),
+                      fill: new Fill({
+                        color: fillColor,
+                      }),
+                    });
+                  } else {
+                    style = new Style({
+                      fill: new Fill({
+                        color: fillColor,
+                      }),
+                    });
+                  }
                   geometry.setStyle(style);
                 }
                 geometryFeatures.push(geometry);
@@ -474,7 +483,7 @@ export const markersLayer: ExtendMapLayerRegistryItem<MarkersConfig> = {
         name: 'Marker Size',
         editor: ScaleDimensionEditor,
         settings: {
-          min: 1,
+          min: 0,
           max: 100, // possible in the UI
         },
         defaultValue: {

@@ -1,6 +1,6 @@
 {
-  "name": "orchestracities-map-panel",
-  "version": "1.4.3",
+  "name": "bobcodes-map-panel",
+  "version": "1.0",
   "description": "",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
@@ -10,7 +10,7 @@
     "sign": "grafana-toolkit plugin:sign",
     "start": "yarn watch"
   },
-  "author": "Federico M. Facca",
+  "author": "bobcodes",
   "license": "AGPL-3.0",
   "devDependencies": {
     "@grafana/data": "^8.1.1",
